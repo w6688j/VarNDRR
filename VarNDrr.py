@@ -265,7 +265,8 @@ class VarNDrr:
             _miniBatch = np.asarray(data[dataIdx[i]])
             _miniBatch[_miniBatch >= dim] = 0  # We make the OOV index to be 0
             # So, the data in training and test file should be index from 1
-            miniBatch[i][_miniBatch] = 1.0
+            if len(_miniBatch):
+                miniBatch[i][_miniBatch] = 1.0
 
         return miniBatch
 
