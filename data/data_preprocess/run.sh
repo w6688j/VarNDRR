@@ -1,17 +1,17 @@
 #! /bin/bash
 
-process=script/data_preprocess.py
-split=script/data_split.py
+process=/home/wangjian/projects/VarNDRR/data/data_preprocess/script/data_preprocess.py
+split=/home/wangjian/projects/VarNDRR/data/data_preprocess/script/data_split.py
 
-data=data/
+data=/home/wangjian/projects/VarNDRR/data/data_preprocess/data
 
 mkdir work
 cd work
 
 # split dataset
-python $split train $data/train
-python $split test $data/test
-python $split dev $data/dev
+python $split train $data/train.raw.txt
+python $split test $data/test.raw.txt
+python $split dev $data/dev.raw.txt
 
 # preprocess
 python $process 4 train train.arg1 train.arg2 train.lbl
