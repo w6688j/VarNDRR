@@ -18,8 +18,8 @@ python $split test $data/test.raw.txt
 python $split dev $data/dev.raw.txt
 
 # preprocess
-python $process 4 train train.arg1 train.arg2 train.lbl
-python $process 4 dev dev.arg1 dev.arg2 dev.lbl arg1.vcb.pkl arg2.vcb.pkl
-python $process 4 test test.arg1 test.arg2 test.lbl arg1.vcb.pkl arg2.vcb.pkl
+python $process 2 train train.arg1 train.arg2 train.lbl
+python $process 2 dev dev.arg1 dev.arg2 dev.lbl arg1.vcb.pkl arg2.vcb.pkl
+python $process 2 test test.arg1 test.arg2 test.lbl arg1.vcb.pkl arg2.vcb.pkl
 
 rm *.arg1 *.arg2 *.lbl

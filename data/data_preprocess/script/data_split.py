@@ -11,10 +11,10 @@ out_lbl = file(prefix + '.lbl', 'w')
 
 def getIdByLabID(lab_id):
     labs = {
-        'Comparison': 0,
-        'Contingency': 1,
-        'Temporal': 2,
-        'Expansion': 3,
+        'Comparison': '1',
+        'Contingency': '2',
+        'Temporal': '3',
+        'Expansion': '4',
     }
 
     return labs[lab_id]
@@ -28,6 +28,8 @@ for line in file(sys.argv[2], 'rU'):
     arg2 = segs[2]
 
     lbl = getIdByLabID(lbl)
+    if lbl != '1':
+        lbl = '0'
 
     print >> out_arg1, arg1
     print >> out_arg2, arg2
