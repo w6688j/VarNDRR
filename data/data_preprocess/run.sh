@@ -5,7 +5,11 @@ split=/home/wangjian/projects/VarNDRR/data/data_preprocess/script/data_split.py
 
 data=/home/wangjian/projects/VarNDRR/data/data_preprocess/data
 
+if [ ! -d "work" ];then
 mkdir work
+else
+rm -rf work
+fi
 cd work
 
 # split dataset
