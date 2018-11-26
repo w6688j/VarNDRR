@@ -21,7 +21,7 @@ def getIdByLabID(lab_id):
 
 
 for line in file(sys.argv[2], 'rU'):
-    segs = line.strip().split(' ||| ')
+    segs = line.strip().split('|||')
 
     lbl = segs[0]
     arg1 = segs[1]
