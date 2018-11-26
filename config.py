@@ -9,15 +9,15 @@ dict(
     is_load=True,  # whether load model parameters, during testing, this should be corrected
     seed=1473769786,  # the seed for random, same seed for same results.
 
-    train_arg1='./data/com/train.arg1.dta.pkl',
-    train_arg2='./data/com/train.arg2.dta.pkl',
-    train_lbl='./data/com/train.lbl.dta.pkl',
-    dev_arg1='./data/com/dev.arg1.dta.pkl',
-    dev_arg2='./data/com/dev.arg2.dta.pkl',
-    dev_lbl='./data/com/dev.lbl.dta.pkl',
-    test_arg1='./data/com/test.arg1.dta.pkl',
-    test_arg2='./data/com/test.arg2.dta.pkl',
-    test_lbl='./data/com/test.lbl.dta.pkl',
+    train_arg1='./data/finally/train.arg1.dta.pkl',
+    train_arg2='./data/finally/train.arg2.dta.pkl',
+    train_lbl='./data/finally/train.lbl.dta.pkl',
+    dev_arg1='./data/finally/dev.arg1.dta.pkl',
+    dev_arg2='./data/finally/dev.arg2.dta.pkl',
+    dev_lbl='./data/finally/dev.lbl.dta.pkl',
+    test_arg1='./data/finally/test.arg1.dta.pkl',
+    test_arg2='./data/finally/test.arg2.dta.pkl',
+    test_lbl='./data/finally/test.lbl.dta.pkl',
 
     mode='test',  # train or test, if test, make the is_load True
 )
