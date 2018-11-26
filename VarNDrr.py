@@ -508,4 +508,4 @@ if __name__ == "__main__":
 
     tst_res = encoder.getPrediction(test_arg1, test_arg2, test_lbl)
     tun_tst_res = get_f_score(tst_res)
-    print 'tst result: accurancy %s, prediction %s, recall %s, f-score %s' % tun_tst_res
+    print 'test result: accurancy %s, prediction %s, recall %s, f-score %s' % tun_tst_res
