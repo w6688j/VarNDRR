@@ -1,9 +1,9 @@
 #! /bin/bash
 
-process=./script/data_preprocess.py
-split=./script/data_split.py
+process=script/data_preprocess.py
+split=script/data_split.py
 
-data=./data/
+data=data/
 
 mkdir work
 cd work
