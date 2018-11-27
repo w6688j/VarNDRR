@@ -4,7 +4,7 @@ dict(
     label_size=2,  # the number of discourse relation label, we model it as one-vs-all
     L=1,  # the sample number
     learning_rate=0.001,  # lerning rate for Adam
-    max_iter=100,  # maximum iteration number, here we set to 100, we use 1000 in our paper
+    max_iter=1000,  # maximum iteration number, here we set to 100, we use 1000 in our paper
     clip_c=1.,  # gradient clip
     is_load=False,  # whether load model parameters, during testing, this should be corrected
     seed=1473769786,  # the seed for random, same seed for same results.
